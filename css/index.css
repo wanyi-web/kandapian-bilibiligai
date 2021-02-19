@@ -1,0 +1,127 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: #000;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxDiv {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    /*750px*/
+    height: 12.653333rem;
+    /* background-color: aliceblue; */
+    /*949px*/
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    /*109px*/
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 7.013333rem;
+    /*526px*/
+    height: 7.706667rem;
+    /* animation: beat1 0.1s alternate linear infinite; */
+}
+
+.dian {
+    position: absolute;
+    top: 1.453333rem;
+    left: 0.253333rem;
+    width: 8.826667rem;
+    height: 7.306667rem;
+    animation: beat11 .3s alternate linear infinite;
+}
+
+@keyframes beat11 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes beat1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2.613333rem;
+    height: 1.093333rem;
+}
+
+.btnDiv {
+    position: absolute;
+    top: 8.293333rem;
+    /*622px*/
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10rem;
+    height: 3.04rem;
+    /*228*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn1 {
+    width: 5.933333rem;
+    height: 1.133333rem;
+    animation: beat .3s alternate linear infinite;
+}
+
+.btn2 {
+    width: 5.933333rem;
+    height: 1.133333rem;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
